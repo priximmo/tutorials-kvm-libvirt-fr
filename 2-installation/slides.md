@@ -33,3 +33,10 @@ lsmod | grep -i kvm
 ```
 sudo systemctl start libvirtd
 sudo systemctl enable libvirtd --now
+```
+
+* pour de meileure performance
+
+```
+sudo modprobevhost_net
+```
