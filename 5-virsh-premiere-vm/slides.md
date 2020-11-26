@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * liste des machines
 
 ```
@@ -13,6 +15,8 @@ virsh list --all
 ```
 
 <br>
+
+
 * création du disk
 
 ```
@@ -20,6 +24,8 @@ sudo truncate -s 25G /var/lib/libvirt/images/xavki20.04.iso
 ```
 
 <br>
+
+
 * dump du xml
 
 ```
@@ -30,6 +36,8 @@ virsh dumpxml ubuntu20.04 > create-vm.xml
 # KVM : premiere vm virsh
 
 <br>
+
+
 * modification du xml
 
 ```
@@ -52,6 +60,8 @@ virsh dumpxml ubuntu20.04 > create-vm.xml
 ```
 
 <br>
+
+
 * création
 
 ```

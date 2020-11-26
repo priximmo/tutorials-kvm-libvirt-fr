@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * NAT : Network Administration Translation
 
 * Pas d'accès direct > encapsulation supplémentaire pour router les paquets
@@ -13,6 +15,8 @@
 * possibilité de fixer les ip via le DHCP
 
 <br>
+
+
 * liste des réseaux
 
 ```
@@ -20,6 +24,8 @@ virsh net-list --all
 ```
 
 <br>
+
+
 * dump d'un réseau
 
 ```
@@ -32,6 +38,8 @@ virsh net-dumpxml default
 
 
 <br>
+
+
 * configuration d'un réseau
 
 ```
@@ -60,6 +68,8 @@ virsh net-dumpxml default
 
 
 <br>
+
+
 * création du nat
 
 ```
@@ -73,6 +83,8 @@ virsh net-autostart xavki
 ```
 
 <br>
+
+
 * ajout ou suppression de machines (dhcp leases)
 
 ```
@@ -82,6 +94,8 @@ virsh net-update xavki delete ip-dhcp-host "<host mac='52:54:00:62:b1:23' name='
 ```
 
 <br>
+
+
 ```
 virsh net-dhcp-lease xavki
 ls /var/lib/libvirt/dnsmasq/

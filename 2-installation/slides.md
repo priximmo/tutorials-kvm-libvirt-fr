@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * check de compatibilité
 
 ```
@@ -15,6 +17,8 @@ kvm-ok
 ```
 
 <br>
+
+
 * installation
 
 ```
@@ -28,6 +32,8 @@ lsmod | grep -i kvm
 ```
 
 <br>
+
+
 * start libvirtd
 
 ```

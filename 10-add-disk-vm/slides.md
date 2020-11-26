@@ -6,6 +6,8 @@
 
 
 <br>
+
+
 * sur la VM petits checks :
 
 ```
@@ -14,6 +16,8 @@ lsblk
 ```
 
 <br>
+
+
 * sur le host - création d'un disk à attacher :
 
 ```
@@ -24,6 +28,8 @@ sudo qemu-img create -f raw ubuntu-2004-disk1-5G 5G
 Rq : raw ou qcow2 (raw = universel ou qcow = snapshot etc)
 
 <br>
+
+
 * sur le host - attacher le disk à la VM :
 
 ```
@@ -35,6 +41,8 @@ virsh attach-disk ubuntu20.04 --source /var/lib/libvirt/images/ubuntu-2004-disk1
 # KVM : Ajouter un disk
 
 <br>
+
+
 * sur la VM - patitioning du disk :
 
 ```
@@ -46,6 +54,8 @@ n > p ...
 Rq : changement de type de partition si nécessaire
 
 <br>
+
+
 * création du file système (possibilité d'étendre le FS existant avec LVM - PV > VG > LV)
 
 ```
@@ -55,6 +65,8 @@ sudo mkdir /data
 ```
 
 <br>
+
+
 * écriture dans le fstab - en dur : 
 
 ```

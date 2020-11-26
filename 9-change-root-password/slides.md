@@ -7,6 +7,8 @@
 
 <br>
 
+
+
 * première méthode via guestfish
 
 shutdown
@@ -23,6 +25,8 @@ fs > quit
 
 
 <br>
+
+
 * sinon via virt-customize
 
 virt-customize -a /var/lib/libvirt/images/debian9-vm1.qcow2 --root-password password:ubuntu2 --uninstall cloud-init
